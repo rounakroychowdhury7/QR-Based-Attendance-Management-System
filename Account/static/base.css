@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.content-section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#particles-js {
+  height: 100vh;
+  background: #040d21;
+}
+h2 {
+  color: #fff;
+}
+.input {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0.7em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  left: 50%;
+  padding: 20px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 55%;
+  width: 25%;
+}
+input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 4px;
+}
+.helptext li {
+  list-style: none;
+}
+.alert-info {
+  width: 80%;
+}
+.button {
+  padding: 2px 20px;
+  background-color: green;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.button1 {
+  width: 200px;
+  background-color: green;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.animation-area {
+  background: #040d21;
+  width: 100%;
+  height: 100vh;
+}
+.box-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.box-area li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 20s linear infinite;
+  bottom: -150px;
+}
+.box-area li:nth-child(1) {
+  left: 86%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+  left: 12%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1.5s;
+  animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+  left: 70%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+  left: 42%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+  left: 65%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+  left: 15%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3.5s;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-800px) rotate(360deg);
+    opacity: 0;
+  }
+}
+@media (max-width: 800px) {
+  .input {
+    width: 82%;
+    height: 83%;
+  }
+  h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 360px) {
+  .input {
+    width: 82%;
+    height: 83%;
+    padding: 14px;
+  }
+}

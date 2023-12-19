@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&display=swap");
+body {
+  background: url("back3.jpg");
+  /* background-position: cover; */
+  background-size: 1920px;
+  width: 100%;
+  height: 100%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#brand {
+  font-family: "Dancing Script", cursive;
+  font-family: "Pacifico", cursive;
+}
+.media {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  width: 100%;
+  height: 78%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+.input {
+  width: 30%;
+  display: flex;
+  height: 69vh;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: rgba(245, 245, 245, 0.9);
+}
+.media input {
+  width: 90%;
+  height: 35px;
+  text-decoration: none;
+  padding: 12px;
+  border: none;
+  background-color: #fff;
+  border-radius: 4px;
+  outline: none;
+}
+.media input:focus {
+  border: 1px solid rgb(255, 115, 0);
+}
+.input .btn {
+  width: 100px;
+  padding: 15px, 20px;
+  background-color: rgb(255, 115, 0);
+}
+
+.media .sec {
+  width: 29%;
+  display: flex;
+  height: 69vh;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  font-size: 1.3em;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #f6fba2;
+  background-image: linear-gradient(315deg, #f6f8c5 0%, #08a8a0 74%);
+  opacity: 90%;
+}
+.media .sec p {
+  margin-left: 40px;
+}
+.menu {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0, 0, 0);
+  transition: 0.8s;
+  z-index: 10;
+}
+.menu ul {
+  display: flex;
+}
+.menu ul li {
+  list-style: none;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+}
+.menu ul li a:hover {
+  background: rgb(255, 115, 0);
+  border-radius: 4px;
+}
+@media (max-width: 800px) {
+  .media .sec {
+    display: none;
+  }
+  .input {
+    width: 104%;
+    height: 81vh;
+    padding: 29px;
+    border-radius: 4px;
+  }
+  .media {
+    transform: translate(-50%, -45%);
+  }
+  .navbar {
+    z-index: 10;
+  }
+}

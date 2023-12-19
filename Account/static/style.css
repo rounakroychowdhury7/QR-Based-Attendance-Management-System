@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&display=swap");
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+#brand {
+  font-family: "Dancing Script", cursive;
+  font-family: "Pacifico", cursive;
+}
+#navbarNavDropdown ul li a {
+  padding: 10px 20px;
+}
+#navbarNavDropdown ul li a:hover {
+  background: #fff;
+  color: #000;
+}
+.media {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 170vh;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#particles-js {
+  height: 170vh;
+  background: #040d21;
+}
+.input {
+  width: 350px;
+  display: flex;
+  height: 85%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  border-radius: 4px;
+  background-color: #f0f2f5;
+}
+.media input {
+  width: 250px;
+  height: 35px;
+  text-decoration: none;
+  padding: 12px;
+  border: none;
+  background-color: #fff;
+  border-radius: 4px;
+  outline: none;
+}
+
+.input .btn {
+  width: 100px;
+  padding: 15px, 20px;
+  background-color: rgb(255, 115, 0);
+}
+.media .sec {
+  width: 400px;
+  display: flex;
+  height: 85%;
+  flex-direction: column;
+  justify-content: top;
+  padding: 20px;
+  padding-top: 100px;
+  font-size: 1.9em;
+  border-radius: 4px;
+  background-color: rgba(5, 32, 51, 0.8);
+  color: #fff;
+}
+.media .sec p {
+  margin-left: 40px;
+}
+@media (width: 360px) {
+  .media {
+    height: 220vh;
+  }
+  .input {
+    width: 326px;
+    padding: 32px;
+  }
+}
+@media (max-width: 414px) {
+  .media {
+    height: 223vh;
+  }
+  .input {
+    height: 89%;
+  }
+  #particles-js {
+    height: 210vh;
+  }
+}
+@media (height: 731px) {
+  .media {
+    height: 202vh;
+  }
+  .input {
+    height: 87%;
+  }
+}
+@media (height: 823px) {
+  .media {
+    height: 171vh;
+  }
+  .input {
+    height: 89%;
+  }
+  #particles-js {
+    height: 165vh;
+  }
+}
+@media (height: 812px) {
+  .media {
+    height: 182vh;
+  }
+  .input {
+    height: 85%;
+  }
+  #particles-js {
+    height: 176vh;
+  }
+}
+@media (height: 720px) {
+  .media {
+    height: 196vh;
+  }
+  .input {
+    height: 86%;
+  }
+  #particles-js {
+    height: 189vh;
+  }
+}
+@media (max-width: 800px) {
+  .media .sec {
+    display: none;
+  }
+}
